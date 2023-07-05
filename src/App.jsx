@@ -5,7 +5,7 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <div className="flex w-screen h-screen px-6 background-gradient">
+    <div className="flex w-screen h-screen">
       <FirstSection />
     </div>
   );
