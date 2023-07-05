@@ -1,10 +1,14 @@
 module.exports = {
-	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-	theme: {
-		extend: {},
-	},
-	variants: {
-		extend: {},
-	},
-	plugins: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        titillium: ["Titillium+Web", "sans-serif"],
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 };
