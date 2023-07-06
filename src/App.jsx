@@ -1,12 +1,13 @@
 import React from "react";
 import FirstSection from "./components/FirstSection";
-import Navbar from "./components/Navbar";
+import ProjectsSection from "./components/ProjectsSections";
 import "./styles/App.css";
 
 function App() {
   return (
-    <div className="flex w-screen h-screen">
+    <div className="flex flex-col w-full h-fit">
       <FirstSection />
+      <ProjectsSection />
     </div>
   );
 }

@@ -19,14 +19,14 @@ const FirstSection = () => {
     },
   ]);
   return (
-    <div className="flex items-center justify-center w-full h-full px-6 background-gradient">
+    <div className="flex items-center justify-center w-full h-screen px-6 background-gradient">
       <div className="flex flex-col items-center md:items-start w-fit h-fit">
         <span className="flex items-center gap-1 font-black text-[#917CAA] text-xs md:text-lg font-titillium">
           Oi <PiHandWavingFill color="#DEAD00" /> eu sou o Nicolas
         </span>
 
         <div className="flex items-center gap-4">
-          <span className="text-5xl font-black text-white text-opacity-90 font-titillium md:text-9xl">
+          <span className="text-4xl font-black text-white text-opacity-90 font-titillium md:text-9xl">
             REACT
           </span>
           <div className="hidden gap-4 mt-4 md:flex">
@@ -47,7 +47,7 @@ const FirstSection = () => {
             />
           </div>
         </div>
-        <span className="text-5xl font-black text-white text-opacity-90 font-titillium md:text-9xl">
+        <span className="text-4xl font-black text-white text-opacity-90 font-titillium md:text-9xl">
           DEVELOPER
         </span>
         <div className="flex items-center justify-center w-full mt-2 text-center md:mt-3 md:justify-end md:text-start md:pr-12 h-fit">

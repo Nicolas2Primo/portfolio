@@ -6,3 +6,14 @@
     ),
     #200c39;
 }
+
+.background-products-gradient {
+  background: linear-gradient(
+    180deg,
+    #572a90 0%,
+    #8261ac 23.65%,
+    #a68ec4 48.16%,
+    #cdc0de 69.38%,
+    #fff 100%
+  );
+}
