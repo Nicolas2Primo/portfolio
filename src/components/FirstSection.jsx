@@ -21,7 +21,7 @@ const FirstSection = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen px-4 background-gradient">
       <div className="flex flex-col items-center md:items-start w-fit h-fit">
-        <span className="flex items-center gap-1 font-black text-[#917CAA] text-xs md:text-lg font-titillium">
+        <span className="flex items-center gap-1 font-black text-[#917CAA] text-[10px] md:text-lg font-titillium">
           Oi <PiHandWavingFill color="#DEAD00" /> eu sou o Nicolas
         </span>
 
