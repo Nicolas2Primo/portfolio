@@ -3,7 +3,7 @@ import ProjectsSwiper from "./ProjectsSwiper";
 
 const ProjectsSection = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen px-6 background-products-gradient">
+    <div className="flex flex-col items-center justify-center w-full h-screen px-2 background-products-gradient">
       <ProjectsSwiper></ProjectsSwiper>
     </div>
   );
