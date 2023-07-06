@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import IphoneIpad from "./IphoneIpad";
@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const ProjectsSwiper = () => {
+  const [windowSize, setWindowSize] = useState(window.innerWidth > 768);
   const [projects, setProjects] = useState([
     {
       iphone: "./argosIphone.svg",
@@ -27,27 +28,24 @@ const ProjectsSwiper = () => {
     },
   ]);
 
-  const [breakpoints, setBreakpoints] = useState({
-    320: {
-      navigation: {
-        enabled: false,
-      },
-    },
-    768: {
-      navigation: {
-        enabled: true,
-      },
-    },
-  });
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize(window.innerWidth > 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Limpeza na saída
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Swiper
-      breakpoints={breakpoints}
       style={{
         "--swiper-navigation-color": "#fff",
         "--swiper-pagination-color": "#9D60CC",
       }}
-      navigation
+      navigation={windowSize}
       pagination={true}
       modules={[Pagination, Navigation]}
       slidesPerView={1}
