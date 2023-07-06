@@ -26,14 +26,14 @@ const FirstSection = () => {
         </span>
 
         <div className="flex items-center gap-4">
-          <span className="text-4xl font-black text-white text-opacity-90 font-titillium md:text-9xl">
+          <span className="text-4xl font-black text-white sm:text-7xl text-opacity-90 font-titillium md:text-8xl lg:text-9xl">
             REACT
           </span>
           <div className="hidden gap-4 mt-4 md:flex">
             <AiFillLinkedin
               size={38}
               color="#FEE6C2"
-              className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
+              className="hover:translate-y-[-5px]  hover:duration-300 hover:transition-transform hover:scale-125 "
             />
             <AiFillGithub
               size={38}
@@ -47,7 +47,7 @@ const FirstSection = () => {
             />
           </div>
         </div>
-        <span className="text-4xl font-black text-white text-opacity-90 font-titillium md:text-9xl">
+        <span className="text-4xl font-black text-white text-opacity-90 font-titillium sm:text-7xl md:text-8xl lg:text-9xl">
           DEVELOPER
         </span>
         <div className="flex items-center justify-center w-full mt-2 text-center md:mt-3 md:justify-end md:text-start md:pr-12 h-fit">
@@ -56,7 +56,7 @@ const FirstSection = () => {
             TRABALHANDO COMO FREELANCER.
           </span>
         </div>
-        <div className="flex gap-4 mt-4 md:hidden">
+        <div className="flex gap-4 mt-4 sm:gap-6 md:hidden">
           <AiFillLinkedin
             size={28}
             color="#FEE6C2"

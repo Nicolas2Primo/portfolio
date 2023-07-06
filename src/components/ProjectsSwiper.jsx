@@ -49,7 +49,7 @@ const ProjectsSwiper = () => {
       pagination={true}
       modules={[Pagination, Navigation]}
       slidesPerView={1}
-      className="w-full h-[380px] md:h-[470px] cursor-grab"
+      className="w-full h-[380px] sm:h-[450px] md:h-[470px] cursor-grab"
     >
       {projects.map((project) => (
         <SwiperSlide className="">
