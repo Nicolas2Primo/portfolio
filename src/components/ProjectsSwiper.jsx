@@ -9,22 +9,22 @@ import "swiper/css/navigation";
 
 const ProjectsSwiper = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth > 768);
+
   const [projects, setProjects] = useState([
     {
       iphone: "./argosIphone.svg",
       ipad: "./argosIpad.svg",
+      link: "https://argostecnologia.netlify.app/",
     },
     {
       iphone: "./menmolistIphone.svg",
-      ipad: "./argosIpad.svg",
+      ipad: "./menmolistIpad.svg",
+      link: "https://menmolist.netlify.app/",
     },
     {
       iphone: "./netflixIphone.svg",
-      ipad: "./argosIpad.svg",
-    },
-    {
-      iphone: "./argosIphone.svg",
-      ipad: "./argosIpad.svg",
+      ipad: "./netflixIpad.svg",
+      link: "https://copynetflix2.netlify.app/",
     },
   ]);
 
@@ -53,7 +53,11 @@ const ProjectsSwiper = () => {
     >
       {projects.map((project) => (
         <SwiperSlide className="">
-          <IphoneIpad iphone={project.iphone} ipad={project.ipad} />
+          <IphoneIpad
+            iphone={project.iphone}
+            ipad={project.ipad}
+            link={project.link}
+          />
         </SwiperSlide>
       ))}
     </Swiper>
