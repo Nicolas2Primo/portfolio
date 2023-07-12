@@ -30,16 +30,23 @@ const FirstSection = () => {
             REACT
           </span>
           <div className="hidden gap-4 mt-4 md:flex">
-            <AiFillLinkedin
-              size={38}
-              color="#FEE6C2"
-              className="hover:translate-y-[-5px]  hover:duration-300 hover:transition-transform hover:scale-125 "
-            />
-            <AiFillGithub
-              size={38}
-              color="#FEE6C2"
-              className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
-            />
+            <a
+              href="https://www.linkedin.com/in/nicolasprimodev"
+              target="_blank"
+            >
+              <AiFillLinkedin
+                size={38}
+                color="#FEE6C2"
+                className="hover:translate-y-[-5px]  hover:duration-300 hover:transition-transform hover:scale-125 "
+              />
+            </a>
+            <a href="https://github.com/Nicolas2Primo" target="_blank">
+              <AiFillGithub
+                size={38}
+                color="#FEE6C2"
+                className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
+              />
+            </a>
             <IoDocumentText
               size={38}
               color="#FEE6C2"
