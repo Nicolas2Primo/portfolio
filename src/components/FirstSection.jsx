@@ -77,21 +77,35 @@ const FirstSection = () => {
           </span>
         </div>
         <div className="flex gap-4 mt-4 sm:gap-6 md:hidden">
-          <AiFillLinkedin
-            size={28}
-            color="#FEE6C2"
-            className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
-          />
-          <AiFillGithub
-            size={28}
-            color="#FEE6C2"
-            className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
-          />
-          <IoDocumentText
-            size={28}
-            color="#FEE6C2"
-            className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
-          />
+          <abbr title="Linkedin">
+            <a href="https://www.linkedin.com/in/nicolasprimodev">
+              <AiFillLinkedin
+                size={28}
+                color="#FEE6C2"
+                className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
+              />
+            </a>
+          </abbr>
+
+          <abbr title="Github">
+            <a href="https://github.com/Nicolas2Primo">
+              <AiFillGithub
+                size={28}
+                color="#FEE6C2"
+                className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
+              />
+            </a>
+          </abbr>
+
+          <abbr title="Currículo">
+            <a href="https://drive.google.com/file/d/1LeTHeDGzFVCo6ZlzdxvXS8RJrylwSoaf/view?usp=sharing">
+              <IoDocumentText
+                size={28}
+                color="#FEE6C2"
+                className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
+              />
+            </a>
+          </abbr>
         </div>
       </div>
     </div>
