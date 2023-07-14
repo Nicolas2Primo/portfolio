@@ -30,28 +30,41 @@ const FirstSection = () => {
             REACT
           </span>
           <div className="hidden gap-4 mt-4 md:flex">
-            <a
-              href="https://www.linkedin.com/in/nicolasprimodev"
-              target="_blank"
-            >
-              <AiFillLinkedin
-                size={38}
-                color="#FEE6C2"
-                className="hover:translate-y-[-5px]  hover:duration-300 hover:transition-transform hover:scale-125 "
-              />
-            </a>
-            <a href="https://github.com/Nicolas2Primo" target="_blank">
-              <AiFillGithub
-                size={38}
-                color="#FEE6C2"
-                className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
-              />
-            </a>
-            <IoDocumentText
-              size={38}
-              color="#FEE6C2"
-              className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
-            />
+            <abbr title="Linkedin">
+              <a
+                href="https://www.linkedin.com/in/nicolasprimodev"
+                target="_blank"
+              >
+                <AiFillLinkedin
+                  size={38}
+                  color="#FEE6C2"
+                  className="hover:translate-y-[-5px]  hover:duration-300 hover:transition-transform hover:scale-125 "
+                />
+              </a>
+            </abbr>
+
+            <abbr title="Github">
+              <a href="https://github.com/Nicolas2Primo" target="_blank">
+                <AiFillGithub
+                  size={38}
+                  color="#FEE6C2"
+                  className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
+                />
+              </a>
+            </abbr>
+
+            <abbr title="Currículo">
+              <a
+                href="https://drive.google.com/file/d/1LeTHeDGzFVCo6ZlzdxvXS8RJrylwSoaf/view?usp=sharing"
+                target="_blank"
+              >
+                <IoDocumentText
+                  size={38}
+                  color="#FEE6C2"
+                  className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
+                />
+              </a>
+            </abbr>
           </div>
         </div>
         <span className="text-4xl font-black text-white text-opacity-90 font-titillium sm:text-7xl md:text-8xl lg:text-9xl">
