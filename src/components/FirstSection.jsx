@@ -3,6 +3,8 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoDocumentText } from "react-icons/io5";
 import { PiHandWavingFill } from "react-icons/pi";
 
+import "../styles/FirstSection.css";
+
 const FirstSection = () => {
   const [icons, setIcons] = useState([
     {
@@ -21,7 +23,7 @@ const FirstSection = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen px-4 background-gradient">
       <div className="flex flex-col items-center md:items-start w-fit h-fit">
-        <span className="flex items-center gap-1 font-black text-[#917CAA] text-[10px] md:text-lg font-titillium">
+        <span className="flex span-animation border-r-[4px] w-[18ch] whitespace-nowrap overflow-hidden border-solid items-center gap-1 font-black text-[#917CAA] text-[10px] md:text-lg font-titillium">
           Oi <PiHandWavingFill color="#DEAD00" /> eu sou o Nicolas
         </span>
 

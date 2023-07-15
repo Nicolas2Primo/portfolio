@@ -3,7 +3,7 @@ import React from "react";
 const IphoneIpad = ({ iphone, ipad, link }) => {
   return (
     <div className="flex items-center justify-center w-full h-full md:h-fit">
-      <a href={link} className="flex gap-2 cursor-pointer">
+      <a href={link} className="flex gap-2 cursor-pointer" target="_blank">
         <div className="flex items-end h-[278px] sm:h-[347px] md:h-[415px]">
           <img
             src={iphone}
