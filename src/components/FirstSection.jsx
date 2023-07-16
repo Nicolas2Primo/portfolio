@@ -40,7 +40,7 @@ const FirstSection = () => {
                 <AiFillLinkedin
                   size={38}
                   color="#FEE6C2"
-                  className="hover:translate-y-[-5px]  hover:duration-300 hover:transition-transform hover:scale-125 "
+                  className="hover:translate-y-[-5px] hover:duration-300 hover:transition-transform hover:scale-125 "
                 />
               </a>
             </abbr>
