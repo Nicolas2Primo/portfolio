@@ -1,5 +1,5 @@
 .span-animation {
-  animation: typing 2s steps(18), bliking 0.5s infinite step-end alternate;
+  animation: typing 2s steps(19), bliking 0.5s infinite step-end alternate;
 }
 
 @keyframes typing {

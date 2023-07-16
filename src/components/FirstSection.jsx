@@ -23,7 +23,7 @@ const FirstSection = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen px-4 background-gradient">
       <div className="flex flex-col items-center md:items-start w-fit h-fit">
-        <span className="flex span-animation border-r-[3px] md:border-r-[4px] w-[18.5ch] whitespace-nowrap overflow-hidden border-solid items-center gap-1 font-black text-[#917CAA] text-[10px] md:text-lg font-titillium">
+        <span className="flex span-animation border-r-[2px] md:border-r-[4px] w-[18.9ch] whitespace-nowrap overflow-hidden border-solid items-center gap-1 font-black text-[#917CAA] text-[10px] md:text-lg font-titillium">
           Oi, eu sou o Nicolas <PiHandWavingFill color="#DEAD00" />
         </span>
 
