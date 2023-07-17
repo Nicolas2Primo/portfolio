@@ -5,7 +5,7 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <div className="flex flex-col w-full h-fit">
+    <div className="flex flex-col w-full h-fit bg-[#200c39]">
       <FirstSection />
       <ProjectsSection />
     </div>
