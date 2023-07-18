@@ -2,9 +2,9 @@ import React, { useState, useContext } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoDocumentText } from "react-icons/io5";
 import { PiHandWavingFill } from "react-icons/pi";
-import DevModeContext from "../contexts/DevModeContext";
-
-import "../styles/FirstSection.css";
+import DevModeContext from "../../contexts/DevModeContext";
+import Typing from "./Typing";
+import "../../styles/FirstSection.css";
 
 const FirstSection = () => {
   const [icons, setIcons] = useState([
@@ -44,14 +44,14 @@ const FirstSection = () => {
       </div>
 
       <div className="z-10 flex flex-col items-center md:items-start w-fit h-fit">
-        <span className="flex span-animation border-r-[2px] select-none md:border-r-[4px] w-[19.5ch] md:w-[18.5ch] whitespace-nowrap overflow-hidden gap-1 border-solid items-center font-black text-[#917CAA] text-[10px] md:text-lg font-titillium">
-          Oi, eu sou o Nicolas{" "}
+        <div className="flex items-center gap-1">
+          <Typing text={["Oi, meu nome é Nicolas"]} />
           <PiHandWavingFill
             color="#DEAD00"
             onClick={handleDevMode}
             className="z-10 cursor-pointer"
           />
-        </span>
+        </div>
 
         <div className="flex items-center gap-4">
           <span className="text-4xl font-black text-white select-none sm:text-7xl text-opacity-90 font-titillium md:text-8xl lg:text-9xl">

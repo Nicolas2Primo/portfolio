@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsSwiper from "./ProjectsSwiper";
+import ProjectsSwiper from "../ProjectsSwiper";
 
 const ProjectsSection = () => {
   return (
