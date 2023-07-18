@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoDocumentText } from "react-icons/io5";
 import { PiHandWavingFill } from "react-icons/pi";
+import DevModeContext from "../contexts/DevModeContext";
 
 import "../styles/FirstSection.css";
 
@@ -20,15 +21,40 @@ const FirstSection = () => {
       link: "",
     },
   ]);
+  const { devMode, setDevMode } = useContext(DevModeContext);
+
+  const handleDevMode = () => {
+    if (devMode < 9) {
+      setDevMode(devMode + 1);
+    }
+  };
   return (
-    <div className="flex items-center justify-center w-full h-screen px-4 background-gradient">
-      <div className="flex flex-col items-center md:items-start w-fit h-fit">
-        <span className="flex span-animation border-r-[2px] md:border-r-[4px] w-[19.5ch] md:w-[18.5ch] whitespace-nowrap overflow-hidden gap-1 border-solid items-center font-black text-[#917CAA] text-[10px] md:text-lg font-titillium">
-          Oi, eu sou o Nicolas <PiHandWavingFill color="#DEAD00" />
+    <div
+      className={`flex flex-col 
+      ${devMode == 9 ? "shake-animation" : ""} 
+      items-center justify-center w-full h-screen px-4 background-gradient overflow-x-hidden`}
+    >
+      <div className="absolute flex flex-col items-center justify-center right-4 top-4">
+        <span className=" select-none font-bold text-[#917CAA] text-xs md:text-base font-titillium">
+          {"<normal mode />"}
+        </span>
+        <span className=" select-none font-bold text-[#917CAA] text-xs md:text-base font-titillium">
+          {devMode == 0 ? " " : devMode}
+        </span>
+      </div>
+
+      <div className="z-10 flex flex-col items-center md:items-start w-fit h-fit">
+        <span className="flex span-animation border-r-[2px] select-none md:border-r-[4px] w-[19.5ch] md:w-[18.5ch] whitespace-nowrap overflow-hidden gap-1 border-solid items-center font-black text-[#917CAA] text-[10px] md:text-lg font-titillium">
+          Oi, eu sou o Nicolas{" "}
+          <PiHandWavingFill
+            color="#DEAD00"
+            onClick={handleDevMode}
+            className="z-10 cursor-pointer"
+          />
         </span>
 
         <div className="flex items-center gap-4">
-          <span className="text-4xl font-black text-white sm:text-7xl text-opacity-90 font-titillium md:text-8xl lg:text-9xl">
+          <span className="text-4xl font-black text-white select-none sm:text-7xl text-opacity-90 font-titillium md:text-8xl lg:text-9xl">
             REACT
           </span>
           <div className="hidden gap-4 mt-4 md:flex">
@@ -69,11 +95,11 @@ const FirstSection = () => {
             </abbr>
           </div>
         </div>
-        <span className="text-4xl font-black text-white text-opacity-90 font-titillium sm:text-7xl md:text-8xl lg:text-9xl">
+        <span className="text-4xl font-black text-white select-none text-opacity-90 font-titillium sm:text-7xl md:text-8xl lg:text-9xl">
           DEVELOPER
         </span>
         <div className="flex items-center justify-center w-full mt-2 text-center md:mt-3 md:justify-end md:text-start md:pr-12 h-fit">
-          <span className=" text-[10px]  md:w-[410px] md:text-[12px] text-white font-titillium md:indent-12 leading-4 md:leading-5">
+          <span className=" text-[10px] select-none  md:w-[410px] md:text-[12px] text-white font-titillium md:indent-12 leading-4 md:leading-5">
             TENHO 21 ANOS SOU DESENVOLVEDOR FRONTEND COM 1 ANO DE EXPERIÊNCIA
             TRABALHANDO COMO FREELANCER.
           </span>
