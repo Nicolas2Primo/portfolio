@@ -8,7 +8,7 @@ const Typing = ({ text = [] }) => {
       wrapper="span"
       cursor={true}
       repeat={1}
-      className="font-black text-[#917CAA] text-[10px] md:text-lg font-titillium inline-block border-white select-none "
+      className="font-black text-[#917CAA] text-[10px] md:text-lg font-titillium inline-block select-none "
     />
   );
 };
