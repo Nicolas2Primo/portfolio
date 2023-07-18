@@ -49,7 +49,8 @@ const FirstSection = () => {
           <PiHandWavingFill
             color="#DEAD00"
             onClick={handleDevMode}
-            className="z-10 cursor-pointer"
+            className="z-10 cursor-pointer hand-shake"
+            style={""}
           />
         </div>
 
