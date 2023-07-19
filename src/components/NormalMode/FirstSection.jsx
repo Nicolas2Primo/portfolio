@@ -22,16 +22,21 @@ const FirstSection = () => {
     },
   ]);
   const { devMode, setDevMode } = useContext(DevModeContext);
+  const [animationRun, setAnimationRun] = useState(false);
 
   const handleDevMode = () => {
     if (devMode < 9) {
       setDevMode(devMode + 1);
+      setAnimationRun(!animationRun);
+      setTimeout(() => {
+        setAnimationRun(false);
+      }, 200);
     }
   };
   return (
     <div
       className={`flex flex-col 
-      ${devMode == 9 ? "shake-animation" : ""} 
+      ${animationRun ? "shake-animation" : ""} 
       items-center justify-center w-full h-screen px-4 background-gradient overflow-x-hidden`}
     >
       <div className="absolute flex flex-col items-center justify-center right-4 top-4">
@@ -50,7 +55,6 @@ const FirstSection = () => {
             color="#DEAD00"
             onClick={handleDevMode}
             className="z-10 cursor-pointer hand-shake"
-            style={""}
           />
         </div>
 
