@@ -10,7 +10,7 @@ const FirstSectionDev = () => {
           {"<dev mode />"}
         </span>
       </div>
-      <span className="text-6xl font-black text-white font-titillium ">
+      <span className="text-3xl font-black text-white md:text-4xl lg:text-6xl font-titillium ">
         DEVELOPING
       </span>
     </div>
