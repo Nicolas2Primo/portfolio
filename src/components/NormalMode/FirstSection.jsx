@@ -53,7 +53,6 @@ const FirstSection = () => {
           <Typing text={["Oi, meu nome é Nicolas"]} />
           <PiHandWavingFill
             color="#DEAD00"
-            onClick={handleDevMode}
             className="z-10 cursor-pointer hand-shake"
           />
         </div>
@@ -100,8 +99,13 @@ const FirstSection = () => {
             </abbr>
           </div>
         </div>
-        <span className="text-4xl font-black text-white select-none text-opacity-90 font-titillium sm:text-7xl md:text-8xl lg:text-9xl">
-          DEVELOPER
+        <span className="flex text-4xl font-black text-white select-none text-opacity-90 font-titillium sm:text-7xl md:text-8xl lg:text-9xl">
+          <div className="cursor-pointer shake-dev">
+            <span onClick={handleDevMode} className=" dev-gradient">
+              {"<DEV>"}
+            </span>
+          </div>
+          ELOPER
         </span>
         <div className="flex items-center justify-center w-full mt-2 text-center md:mt-3 md:justify-end md:text-start md:pr-12 h-fit">
           <span className=" text-[10px] select-none  md:w-[410px] md:text-[12px] text-white font-titillium md:indent-12 leading-4 md:leading-5">
