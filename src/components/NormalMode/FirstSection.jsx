@@ -36,17 +36,19 @@ const FirstSection = () => {
   return (
     <div
       className={`flex flex-col 
-      ${animationRun ? "shake-animation" : ""} 
+      ${animationRun ? "shake-animation" : ""}
       items-center justify-center w-full h-screen px-4 background-gradient overflow-x-hidden`}
     >
-      <div className="absolute flex flex-col items-center justify-center right-4 top-4">
-        <span className=" select-none font-bold text-[#917CAA] text-xs md:text-base font-titillium">
-          {"<normal mode />"}
-        </span>
-        <span className=" select-none font-bold text-[#917CAA] text-xs md:text-base font-titillium">
-          {devMode == 0 ? " " : devMode}
-        </span>
-      </div>
+      <span className=" absolute right-4 top-4 select-none font-bold text-[#917CAA] text-xs md:text-base font-titillium">
+        {"<NormalMode />"}
+      </span>
+      <span
+        className={`${
+          animationRun ? " number-animation" : ""
+        } absolute top-32 select-none font-bold text-[#917CAA] text-2xl md:text-base font-titillium`}
+      >
+        {devMode == 0 ? " " : devMode}
+      </span>
 
       <div className="z-10 flex flex-col items-center md:items-start w-fit h-fit">
         <div className="flex items-center gap-1">
