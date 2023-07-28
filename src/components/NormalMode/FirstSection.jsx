@@ -45,7 +45,7 @@ const FirstSection = () => {
       <span
         className={`${
           animationRun ? " number-animation" : ""
-        } absolute top-32 md:top-24 select-none font-bold text-[#917CAA] text-2xl md:text-6xl font-titillium`}
+        } absolute top-32 md:top-24 select-none font-bold text-[#917CAA] text-4xl md:text-6xl font-titillium`}
       >
         {devMode == 0 ? " " : devMode}
       </span>
