@@ -62,7 +62,7 @@
 }
 
 .shake-dev {
-  animation: shake 15s infinite alternate;
+  animation: shake 12s infinite alternate;
 }
 
 .shake-dev:hover {
