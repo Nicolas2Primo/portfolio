@@ -3,7 +3,7 @@ import "../styles/Box.css";
 
 const Box = () => {
   return (
-    <div className="container scale-50">
+    <div className="container flex items-center justify-center scale-[0.3]">
       <div className=" box">
         <div className="card" id="front">
           Front
