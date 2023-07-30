@@ -1,4 +1,5 @@
 import React from "react";
+import Box from "../Box";
 
 const FirstSectionDev = () => {
   return (
@@ -13,6 +14,7 @@ const FirstSectionDev = () => {
       <span className="text-3xl font-black text-white md:text-4xl lg:text-6xl font-titillium ">
         DEVELOPING
       </span>
+      <Box />
     </div>
   );
 };
