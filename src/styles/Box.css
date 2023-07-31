@@ -2,6 +2,8 @@
   height: 60vh;
   width: 30vw;
   perspective: 1000px;
+  position: absolute;
+  right: 200px;
 }
 
 .box {
@@ -12,7 +14,7 @@
   left: 100px;
   transform-style: preserve-3d;
 
-  animation: rotationBox 100s linear infinite;
+  animation: rotationBox 120s linear infinite alternate;
 }
 
 .card {

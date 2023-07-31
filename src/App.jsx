@@ -13,7 +13,6 @@ function App() {
       {devMode == 9 ? (
         <>
           <FirstSectionDev />
-          <ProjectsSectionDev />
         </>
       ) : (
         <>

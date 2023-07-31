@@ -12,9 +12,8 @@ const FirstSectionDev = () => {
         </span>
       </div>
       <span className="text-3xl font-black text-white md:text-4xl lg:text-6xl font-titillium ">
-        DEVELOPING
+        Coming soom...
       </span>
-      <Box />
     </div>
   );
 };
